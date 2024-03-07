@@ -30,7 +30,7 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
   centerMode: true,
   arrows: false,
   responsive: {
-    480: {
+    575: {
       dots: false,
     },
   },

@@ -519,6 +519,12 @@ p[data-width="wide"] {
   box-shadow: var(--shadow-2);
 }
 
+@media(max-width: 38rem) {
+  .home-intro .container {
+    height: 25em;
+  }
+}
+
 .home-intro .hero-content {
   text-shadow: 2px 2px #ff0000;
   color: #fff;
@@ -658,6 +664,11 @@ p[data-width="wide"] {
   font-weight: var(--fw-semi-bold);
 }
 
+.footer ul li a:hover  {
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-semi-bold);
+}
+
 .footer i  {
   font-size: 3rem;
   margin-inline: 15px;
@@ -731,7 +742,7 @@ height: 100vh;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
-padding: 0 500px;
+padding: 0 10rem;
 }
 
 @media (max-width: 40em){
