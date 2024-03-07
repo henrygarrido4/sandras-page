@@ -729,6 +729,12 @@ p[data-width="wide"] {
   color: #fff;
 }
 
+span {
+  color: var(--clr-accent-500);
+  margin-top: 10px;
+  display: block;
+}
+
 /* UTILITY CLASSES */
 
 
