@@ -11,6 +11,7 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,7 +62,7 @@
             <ul class="nav__list">
               <li>
                 <a
-                  href="#"
+                  href="catalog.html#cart-items"
                   class="button button-color nav__link nav__link--btn display-sm-none display-md-inline-flex"
                   >Cart</a
                 >
@@ -80,7 +81,9 @@
           </ul>
           <ul>
             <li>
-              <a href="#" class="button | action_btn">Shopping Cart</a>
+              <a href="catalog.html#cart-items" class="button | action_btn"
+                >Shopping Cart</a
+              >
             </li>
           </ul>
         </div>
@@ -108,25 +111,25 @@
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder="Nombre"
               class="contact-inputs"
               required
             />
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Correo Electronico"
               class="contact-inputs"
               required
             />
             <textarea
               name="message"
-              placeholder="Your Message"
+              placeholder="Mensaje"
               class="contact-inputs"
               required
             ></textarea>
             <button type="submit">
-              Submit <img src="images/arrow_icon.png" alt="" />
+              Enviar <img src="images/arrow_icon.png" alt="" />
             </button>
           </form>
           <div class="contact-right">
@@ -149,14 +152,16 @@
                   Subscribete ahora para recibir nuevos informes de producto
                   entrante.
                 </p>
-                <form>
+                <form name="submit-to-google-sheet">
                   <input
                     type="email"
-                    id="email"
-                    placeholder="Enter your email"
+                    name="Email"
+                    placeholder="Introduzca su correo electronico"
+                    required
                   />
                   <button class="button btn-block">Subscribete</button>
                 </form>
+                <span id="msg"></span>
               </div>
               <div class="social-icons">
                 <a href="https://www.instagram.com/sandrascreations2023/"
@@ -169,7 +174,7 @@
                 ></a>
               </div>
             </div>
-            <div>
+            <div class="footer_padding">
               <h3>Compania</h3>
               <ul>
                 <li><a href="index.html">Home</a></li>
@@ -187,5 +192,25 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyfXCIIj2zfixYfkG3EKywQPLSa4HOkrbWBouZ-_qWvcQno8olioh-tTzVW2HKy58xlrA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Gracias por Subscribirte!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

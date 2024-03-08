@@ -7,7 +7,7 @@
 
     <!-- CSS STYLE SHEET -->
     <link rel="stylesheet" href="css/style.css" />
-    
+    <link rel="stylesheet" href="css/catalog.css" />
 
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,14 +18,7 @@
     />
 
     <!-- JS -->
-    <script src="js/app.js" defer></script>
-
-    <!-- ALLY SLIDER -->
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
-    />
+    <script src="js/catalog.js" defer></script>
 
     <!-- FAVICON -->
 
@@ -66,7 +59,7 @@
             <ul class="nav__list">
               <li>
                 <a
-                  href="#"
+                  href="#cart-items"
                   class="button button-color nav__link nav__link--btn display-sm-none display-md-inline-flex"
                   >Cart</a
                 >
@@ -85,48 +78,258 @@
           </ul>
           <ul>
             <li>
-              <a href="#" class="button | action_btn">Shopping Cart</a>
+              <a href="#cart-items" class="button | action_btn"
+                >Shopping Cart</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <!-- MAIN SECTION
-     -->
-
-    <main class="padding-block-900">
-      <div class="container">
-        <header>
-          <div class="title">PRODUCT LIST</div>
-          <div class="icon-cart">
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 18 20"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
-              />
-            </svg>
-            <span>0</span>
+    <!-- HERO -->
+    <main>
+      <section class="home-intro | text-center-sm-only">
+        <div class="hero-image">
+          <div class="hero-content">
+            <h1 class="fs-primary-heading fw-bold">
+              Hecho a mano <br />
+              con Amor
+            </h1>
           </div>
-        </header>
-        <div class="listProduct"></div>
-      </div>
-      <div class="cartTab">
-        <h1>Shopping Cart</h1>
-        <div class="listCart"></div>
-        <div class="btn">
-          <button class="close">CLOSE</button>
-          <button class="checkOut">Check Out</button>
         </div>
-      </div>
+      </section>
+
+      <!-- MAIN CONTENT -->
+
+      <!-- 8 TOTAL BALLONS AND FLOWERS -->
+
+      <section class="container home-intro content-section">
+        <h2 class="section-header fs-secondary-heading">CATALOGO UNO</h2>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Llaveros</span>
+            <img class="shop-item-image" src="Images/image-slider-0.JPG" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$12.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Docena de rosas</span>
+            <img class="shop-item-image" src="Images/image-slider-1.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$14.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Globo 1</span>
+            <img class="shop-item-image" src="Images/image-slider-2.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$9.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Globo 2</span>
+            <img class="shop-item-image" src="Images/image-slider-3.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Globo 3</span>
+            <img class="shop-item-image" src="Images/image-slider-4.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Globo 4</span>
+            <img class="shop-item-image" src="Images/image-slider-5.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Globo 5</span>
+            <img class="shop-item-image" src="Images/image-slider-6.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Globo 6</span>
+            <img class="shop-item-image" src="Images/image-slider-7.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$6.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section">
+        <h2 class="section-header fs-secondary-heading">CATALOGO DOS</h2>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">3 Vasos</span>
+            <img class="shop-item-image" src="Images/TASA-1.JPG" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Vaso 1</span>
+            <img class="shop-item-image" src="Images/TASA-2.JPG" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Vaso 2</span>
+            <img class="shop-item-image" src="Images/TASA-5.JPG" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Vaso 4</span>
+            <img class="shop-item-image" src="Images/TASA-4.JPG" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$6.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CART -->
+
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong id="cart-items" class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">
+          PURCHASE
+        </button>
+      </section>
+
+      <!-- FOOTER -->
+
+      <footer class="footer bg-footer padding-block-900 text-center-sm-only">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a href="index.html">
+                <img src="images/Black.svg" alt="" />
+              </a>
+              <div class="card">
+                <h4>Sucribete al Noticiero</h4>
+                <p class="text-sm">
+                  Subscribete ahora para recibir nuevos informes de producto
+                  entrante.
+                </p>
+                <form name="submit-to-google-sheet">
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Introduzca su correo electronico"
+                    required
+                  />
+                  <button class="button btn-block">Subscribete</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/sandrascreations2023/"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+                <a
+                  href="https://www.google.com/search?q=facebook&sca_esv=676f50895ef768f0&sxsrf=ACQVn0_QOq8HRNbutRX1Fgt7LPjfAaOROw%3A1709578477474&source=hp&ei=7RjmZaCoGoXJkPIPooyJkAM&iflsig=ANes7DEAAAAAZeYm_ZgCkfwbrsgPJRGmfZ2r5XSZayIB&ved=0ahUKEwjg0vOOpNuEAxWFJEQIHSJGAjIQ4dUDCBc&uact=5&oq=facebook&gs_lp=Egdnd3Mtd2l6IghmYWNlYm9vazIREC4YgAQYsQMYgwEYxwEY0QMyCxAAGIAEGLEDGMkDMgsQABiABBixAxiDATIFEAAYgAQyCxAAGIAEGIoFGJIDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQNI0wpQAFiFCXAAeACQAQCYAWigAe0EqgEDNy4xuAEDyAEA-AEBmAIIoAL_BMICChAjGIAEGIoFGCfCAgQQIxgnwgITEC4YgAQYigUYxwEYrwEYjgUYJ8ICDhAuGIAEGLEDGMcBGNEDwgIREC4YgwEYxwEYsQMY0QMYgASYAwCSBwM3LjE&sclient=gws-wiz"
+                >
+                  <i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer_padding">
+              <h3>Compania</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Contact Us</h3>
+              <ul>
+                <li><a href="#">sandra2140@gmail.com </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyfXCIIj2zfixYfkG3EKywQPLSa4HOkrbWBouZ-_qWvcQno8olioh-tTzVW2HKy58xlrA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Gracias por Subscribirte!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
