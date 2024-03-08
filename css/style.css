@@ -184,10 +184,11 @@ p[data-width="wide"] {
    background-position: center 84%; 
   text-align: center;
   color: #fff;
-  padding-top: 400px;
-  padding-bottom: 400px;
-  text-shadow: 2px 2px #ff0000;
+  padding-top: 300px;
+  padding-bottom: 350px;
+  text-shadow: 2px 2px var(--clr-accent-400);
   color: #777777;
+  box-shadow: var(--shadow-2);
 }
 
 @media(max-width: 38rem) {
@@ -199,7 +200,7 @@ p[data-width="wide"] {
 }
 
  .hero-content {
-  padding-left: 2rem;
+  padding: 0 1.5rem;
 }
 
 /***************** BUTTON *****************/
