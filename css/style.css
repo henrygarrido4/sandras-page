@@ -142,7 +142,7 @@ a {
 p:not([class]) {
   opacity: 0.7;
   max-width: 55ch;
-  line-height: 29px;
+  line-height: 2.2rem;
 }
 
 p[data-width="wide"] {
@@ -350,6 +350,8 @@ p[data-width="wide"] {
 
 .dropdown_menu.open {
   height: 240px;
+  border: 2px solid var(--clr-accent-500);
+  background-color: #fff;
 }
 
 .dropdown_menu li {
@@ -412,7 +414,7 @@ p[data-width="wide"] {
 }
 
 .sales-points-img img {
-  height: 90%;
+  padding-block: var(--size-300);
 }
 
 @media (max-width: 47em) {
